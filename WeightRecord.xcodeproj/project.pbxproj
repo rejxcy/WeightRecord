@@ -12,6 +12,8 @@
 		2E8684B22A70D1C800E58E49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E8684B12A70D1C800E58E49 /* Assets.xcassets */; };
 		2E8684B52A70D1C800E58E49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E8684B42A70D1C800E58E49 /* Preview Assets.xcassets */; };
 		2E8684C02A70DF4E00E58E49 /* WeightReocrd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8684BF2A70DF4E00E58E49 /* WeightReocrd.swift */; };
+		2E8684C42A70EACD00E58E49 /* RecentChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8684C32A70EACD00E58E49 /* RecentChart.swift */; };
+		2E8684C62A7105DB00E58E49 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8684C52A7105DB00E58E49 /* TestData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		2E8684B12A70D1C800E58E49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E8684B42A70D1C800E58E49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2E8684BF2A70DF4E00E58E49 /* WeightReocrd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightReocrd.swift; sourceTree = "<group>"; };
+		2E8684C32A70EACD00E58E49 /* RecentChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentChart.swift; sourceTree = "<group>"; };
+		2E8684C52A7105DB00E58E49 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +57,9 @@
 		2E8684AC2A70D1C700E58E49 /* WeightRecord */ = {
 			isa = PBXGroup;
 			children = (
-				2E8684BE2A70DF1600E58E49 /* Model */,
 				2E8684AD2A70D1C700E58E49 /* WeightRecordApp.swift */,
-				2E8684AF2A70D1C700E58E49 /* ContentView.swift */,
+				2E8684BE2A70DF1600E58E49 /* Model */,
+				2E8684C12A70E21B00E58E49 /* Views */,
 				2E8684B12A70D1C800E58E49 /* Assets.xcassets */,
 				2E8684B32A70D1C800E58E49 /* Preview Content */,
 			);
@@ -74,8 +78,26 @@
 			isa = PBXGroup;
 			children = (
 				2E8684BF2A70DF4E00E58E49 /* WeightReocrd.swift */,
+				2E8684C52A7105DB00E58E49 /* TestData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2E8684C12A70E21B00E58E49 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2E8684AF2A70D1C700E58E49 /* ContentView.swift */,
+				2E8684C22A70E79700E58E49 /* WeightChart */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2E8684C22A70E79700E58E49 /* WeightChart */ = {
+			isa = PBXGroup;
+			children = (
+				2E8684C32A70EACD00E58E49 /* RecentChart.swift */,
+			);
+			path = WeightChart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +173,8 @@
 				2E8684C02A70DF4E00E58E49 /* WeightReocrd.swift in Sources */,
 				2E8684B02A70D1C700E58E49 /* ContentView.swift in Sources */,
 				2E8684AE2A70D1C700E58E49 /* WeightRecordApp.swift in Sources */,
+				2E8684C62A7105DB00E58E49 /* TestData.swift in Sources */,
+				2E8684C42A70EACD00E58E49 /* RecentChart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
