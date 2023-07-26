@@ -11,6 +11,7 @@
 		2E8684B02A70D1C700E58E49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8684AF2A70D1C700E58E49 /* ContentView.swift */; };
 		2E8684B22A70D1C800E58E49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E8684B12A70D1C800E58E49 /* Assets.xcassets */; };
 		2E8684B52A70D1C800E58E49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E8684B42A70D1C800E58E49 /* Preview Assets.xcassets */; };
+		2E8684C02A70DF4E00E58E49 /* WeightReocrd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8684BF2A70DF4E00E58E49 /* WeightReocrd.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		2E8684AF2A70D1C700E58E49 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2E8684B12A70D1C800E58E49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E8684B42A70D1C800E58E49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2E8684BF2A70DF4E00E58E49 /* WeightReocrd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightReocrd.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		2E8684AC2A70D1C700E58E49 /* WeightRecord */ = {
 			isa = PBXGroup;
 			children = (
+				2E8684BE2A70DF1600E58E49 /* Model */,
 				2E8684AD2A70D1C700E58E49 /* WeightRecordApp.swift */,
 				2E8684AF2A70D1C700E58E49 /* ContentView.swift */,
 				2E8684B12A70D1C800E58E49 /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				2E8684B42A70D1C800E58E49 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2E8684BE2A70DF1600E58E49 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E8684BF2A70DF4E00E58E49 /* WeightReocrd.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E8684C02A70DF4E00E58E49 /* WeightReocrd.swift in Sources */,
 				2E8684B02A70D1C700E58E49 /* ContentView.swift in Sources */,
 				2E8684AE2A70D1C700E58E49 /* WeightRecordApp.swift in Sources */,
 			);
