@@ -17,7 +17,7 @@ struct RecordRow: View {
                         .font(.subheadline)
                         .foregroundColor(.primary)
                 }
-                .padding(3)
+                .padding(.top, 3)
             }
             
             HStack(spacing: 4) {
