@@ -2,12 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            RecentChart(records: TestData().weightRecords)
-                
-            Spacer()
-        }
-        .padding()
+        Text("Hello")
     }
 }
 

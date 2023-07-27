@@ -12,7 +12,7 @@
 		2E8684B22A70D1C800E58E49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E8684B12A70D1C800E58E49 /* Assets.xcassets */; };
 		2E8684B52A70D1C800E58E49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E8684B42A70D1C800E58E49 /* Preview Assets.xcassets */; };
 		2E8684C02A70DF4E00E58E49 /* WeightReocrd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8684BF2A70DF4E00E58E49 /* WeightReocrd.swift */; };
-		2E8684C42A70EACD00E58E49 /* RecentChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8684C32A70EACD00E58E49 /* RecentChart.swift */; };
+		2E8684C42A70EACD00E58E49 /* RecordChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8684C32A70EACD00E58E49 /* RecordChart.swift */; };
 		2E8684C62A7105DB00E58E49 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8684C52A7105DB00E58E49 /* TestData.swift */; };
 		2E8684CB2A72210B00E58E49 /* RecordRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8684CA2A72210B00E58E49 /* RecordRow.swift */; };
 		2E8684CF2A72980A00E58E49 /* RecordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8684CE2A72980A00E58E49 /* RecordList.swift */; };
@@ -25,7 +25,7 @@
 		2E8684B12A70D1C800E58E49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E8684B42A70D1C800E58E49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2E8684BF2A70DF4E00E58E49 /* WeightReocrd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightReocrd.swift; sourceTree = "<group>"; };
-		2E8684C32A70EACD00E58E49 /* RecentChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentChart.swift; sourceTree = "<group>"; };
+		2E8684C32A70EACD00E58E49 /* RecordChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordChart.swift; sourceTree = "<group>"; };
 		2E8684C52A7105DB00E58E49 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		2E8684CA2A72210B00E58E49 /* RecordRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordRow.swift; sourceTree = "<group>"; };
 		2E8684CE2A72980A00E58E49 /* RecordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordList.swift; sourceTree = "<group>"; };
@@ -91,23 +91,15 @@
 			isa = PBXGroup;
 			children = (
 				2E8684AF2A70D1C700E58E49 /* ContentView.swift */,
-				2E8684C22A70E79700E58E49 /* WeightChart */,
 				2E8684C72A721FB800E58E49 /* Records */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		2E8684C22A70E79700E58E49 /* WeightChart */ = {
-			isa = PBXGroup;
-			children = (
-				2E8684C32A70EACD00E58E49 /* RecentChart.swift */,
-			);
-			path = WeightChart;
-			sourceTree = "<group>";
-		};
 		2E8684C72A721FB800E58E49 /* Records */ = {
 			isa = PBXGroup;
 			children = (
+				2E8684C32A70EACD00E58E49 /* RecordChart.swift */,
 				2E8684CE2A72980A00E58E49 /* RecordList.swift */,
 				2E8684CA2A72210B00E58E49 /* RecordRow.swift */,
 			);
@@ -188,7 +180,7 @@
 				2E8684B02A70D1C700E58E49 /* ContentView.swift in Sources */,
 				2E8684AE2A70D1C700E58E49 /* WeightRecordApp.swift in Sources */,
 				2E8684C62A7105DB00E58E49 /* TestData.swift in Sources */,
-				2E8684C42A70EACD00E58E49 /* RecentChart.swift in Sources */,
+				2E8684C42A70EACD00E58E49 /* RecordChart.swift in Sources */,
 				2E8684CB2A72210B00E58E49 /* RecordRow.swift in Sources */,
 				2E8684CF2A72980A00E58E49 /* RecordList.swift in Sources */,
 			);

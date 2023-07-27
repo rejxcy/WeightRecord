@@ -1,7 +1,7 @@
 import SwiftUI
 import Charts
 
-struct RecentChart: View {
+struct RecordChart: View {
     
     var records: [WeightRecord]
     var averageWeight: Double {
@@ -12,8 +12,8 @@ struct RecentChart: View {
     var body: some View {
         
         VStack( alignment: .leading) {
-            Text("近七天體重紀錄")
-                .padding(.bottom, -10)
+            Text("體重紀錄")
+                .padding(.bottom, -20)
             
             Chart {
                 ForEach(records.indices, id: \.self) { index in
@@ -23,8 +23,8 @@ struct RecentChart: View {
                     )
                 }
             }
-            .chartYScale(domain: [averageWeight - 4, averageWeight + 4])
-            .frame(height: 200)
+            .chartYScale(domain: [averageWeight - 3, averageWeight + 3])
+            .frame(height: 250)
             .chartXAxis(.hidden)
             .chartYAxis {
                 AxisMarks(position: .leading)
@@ -35,8 +35,8 @@ struct RecentChart: View {
     }
 }
 
-struct RecentChart_Previews: PreviewProvider {
+struct RecordChart_Previews: PreviewProvider {
     static var previews: some View {
-        RecentChart(records: TestData().weightRecords)
+        RecordChart(records: TestData().weightRecords)
     }
 }
