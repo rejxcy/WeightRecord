@@ -4,33 +4,29 @@ import Charts
 struct RecordChart: View {
     
     var records: [WeightRecord]
-    var averageWeight: Double {
-        let totalWeight = records.reduce(0.0) { $0 + $1.weight }
-        return totalWeight / Double(records.count)
-    }
     
     var body: some View {
         
-        VStack( alignment: .leading) {
-            Text("體重紀錄")
-                .padding(.bottom, -20)
-            
-            Chart {
-                ForEach(records.indices, id: \.self) { index in
-                    LineMark(
-                        x: .value("Day", records[index].getDateString()),
-                        y: .value("Weight", records[index].weight)
-                    )
-                }
-            }
-            .chartYScale(domain: [averageWeight - 3, averageWeight + 3])
-            .frame(height: 250)
-            .chartXAxis(.hidden)
-            .chartYAxis {
-                AxisMarks(position: .leading)
+        Chart {
+            ForEach(records.indices, id: \.self) { index in
+                LineMark(
+                    x: .value("Day", records[index].getDateString()),
+                    y: .value("Weight", records[index].weight)
+                )
             }
         }
-        .padding()
+        .padding(5)
+        .frame(height: 250)
+        .chartXAxis(.hidden)
+        .chartYScale(domain: [records.map { $0.weight }.min()! - 0.5,
+                              records.map { $0.weight }.max()! + 0.5])
+        .chartYAxis {
+            AxisMarks(position: .leading)
+        }
+        .chartPlotStyle { plotArea in
+            plotArea
+                .background(.blue.opacity(0.1))
+        }
         
     }
 }

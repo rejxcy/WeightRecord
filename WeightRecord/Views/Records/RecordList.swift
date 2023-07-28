@@ -10,7 +10,8 @@ struct RecordList: View {
                 RecordRow(record: records[index], compareLast: getCompareLast(index: index))
             }
         }
-        .padding(15)
+        .padding(.horizontal, 10)
+        
     }
     
     private func getCompareLast(index: Int) -> Double {

@@ -16,6 +16,7 @@
 		2E8684C62A7105DB00E58E49 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8684C52A7105DB00E58E49 /* TestData.swift */; };
 		2E8684CB2A72210B00E58E49 /* RecordRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8684CA2A72210B00E58E49 /* RecordRow.swift */; };
 		2E8684CF2A72980A00E58E49 /* RecordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8684CE2A72980A00E58E49 /* RecordList.swift */; };
+		2E8684D32A735F5700E58E49 /* RecordDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8684D22A735F5700E58E49 /* RecordDisplay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		2E8684C52A7105DB00E58E49 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		2E8684CA2A72210B00E58E49 /* RecordRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordRow.swift; sourceTree = "<group>"; };
 		2E8684CE2A72980A00E58E49 /* RecordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordList.swift; sourceTree = "<group>"; };
+		2E8684D22A735F5700E58E49 /* RecordDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordDisplay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		2E8684C72A721FB800E58E49 /* Records */ = {
 			isa = PBXGroup;
 			children = (
+				2E8684D22A735F5700E58E49 /* RecordDisplay.swift */,
 				2E8684C32A70EACD00E58E49 /* RecordChart.swift */,
 				2E8684CE2A72980A00E58E49 /* RecordList.swift */,
 				2E8684CA2A72210B00E58E49 /* RecordRow.swift */,
@@ -179,6 +182,7 @@
 				2E8684C02A70DF4E00E58E49 /* WeightReocrd.swift in Sources */,
 				2E8684B02A70D1C700E58E49 /* ContentView.swift in Sources */,
 				2E8684AE2A70D1C700E58E49 /* WeightRecordApp.swift in Sources */,
+				2E8684D32A735F5700E58E49 /* RecordDisplay.swift in Sources */,
 				2E8684C62A7105DB00E58E49 /* TestData.swift in Sources */,
 				2E8684C42A70EACD00E58E49 /* RecordChart.swift in Sources */,
 				2E8684CB2A72210B00E58E49 /* RecordRow.swift in Sources */,
