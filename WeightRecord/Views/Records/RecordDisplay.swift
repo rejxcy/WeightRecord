@@ -6,9 +6,23 @@ struct RecordDisplay: View {
     var records: [WeightRecord]
     
     var body: some View {
-        ScrollView(showsIndicators: false) {
-            RecordChart(records: records)
-            RecordList(records: records)
+        NavigationView {
+            ScrollView(showsIndicators: false) {
+                RecordChart(records: records)
+                RecordList(records: records)
+            }
+            .navigationBarTitle("Weight Records")
+            .toolbar {
+                Button {
+                    showingProfile.toggle()
+                } label: {
+                    Label("User Profile", systemImage: "person.crop.circle")
+                }
+            }
+            .sheet(isPresented: $showingProfile) {
+                ProfileHost()
+            }
+            
         }
     }
 }

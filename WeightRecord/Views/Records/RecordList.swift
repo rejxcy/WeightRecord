@@ -10,7 +10,7 @@ struct RecordList: View {
                 RecordRow(record: records[index], compareLast: getCompareLast(index: index))
             }
         }
-        .padding(.horizontal, 10)
+        .padding(.horizontal, 15)
         
     }
     

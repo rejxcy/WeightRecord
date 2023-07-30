@@ -18,6 +18,8 @@ final class TestData: ObservableObject {
         WeightRecord(date: Date().addingTimeInterval(-86400), weight: 65.9),
         WeightRecord(date: Date(), weight: 65.5)
     ]
+    
+    @Published var profile: Profile = Profile(username: "user_one", age: 25, height: "177.8", weight: 82, activityTime: 3)
 }
 
 
