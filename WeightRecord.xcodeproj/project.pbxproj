@@ -22,6 +22,7 @@
 		2E8684E02A76493700E58E49 /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8684DF2A76493700E58E49 /* ProfileSummary.swift */; };
 		2E8684E22A7660B800E58E49 /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8684E12A7660B800E58E49 /* ProfileEditor.swift */; };
 		2E8684E52A77614B00E58E49 /* NewRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8684E42A77614B00E58E49 /* NewRecord.swift */; };
+		2E8684E92A78D46000E58E49 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 2E8684E82A78D46000E58E49 /* SQLite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E8684E92A78D46000E58E49 /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +150,9 @@
 			dependencies = (
 			);
 			name = WeightRecord;
+			packageProductDependencies = (
+				2E8684E82A78D46000E58E49 /* SQLite */,
+			);
 			productName = WeightRecord;
 			productReference = 2E8684AA2A70D1C700E58E49 /* WeightRecord.app */;
 			productType = "com.apple.product-type.application";
@@ -176,6 +181,9 @@
 				Base,
 			);
 			mainGroup = 2E8684A12A70D1C700E58E49;
+			packageReferences = (
+				2E8684E72A78D46000E58E49 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+			);
 			productRefGroup = 2E8684AB2A70D1C700E58E49 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -413,6 +421,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2E8684E72A78D46000E58E49 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.14.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2E8684E82A78D46000E58E49 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2E8684E72A78D46000E58E49 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2E8684A22A70D1C700E58E49 /* Project object */;
 }
