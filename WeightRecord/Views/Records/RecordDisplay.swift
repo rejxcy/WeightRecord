@@ -2,6 +2,7 @@ import SwiftUI
 
 struct RecordDisplay: View {
     @State private var showingProfile = false
+    @State private var showingNewRecord = false
     
     var records: [WeightRecord]
     
@@ -18,11 +19,18 @@ struct RecordDisplay: View {
                 } label: {
                     Label("User Profile", systemImage: "person.crop.circle")
                 }
+                Button {
+                    showingNewRecord.toggle()
+                } label: {
+                    Label("Add Record", systemImage: "note.text.badge.plus")
+                }
             }
             .sheet(isPresented: $showingProfile) {
                 ProfileHost()
             }
-            
+            .sheet(isPresented: $showingNewRecord) {
+                NewRecord() 
+            }
         }
     }
 }
