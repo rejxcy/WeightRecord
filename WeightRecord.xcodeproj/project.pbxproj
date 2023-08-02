@@ -23,6 +23,7 @@
 		2E8684E22A7660B800E58E49 /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8684E12A7660B800E58E49 /* ProfileEditor.swift */; };
 		2E8684E52A77614B00E58E49 /* NewRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8684E42A77614B00E58E49 /* NewRecord.swift */; };
 		2E8684E92A78D46000E58E49 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 2E8684E82A78D46000E58E49 /* SQLite */; };
+		2E8684EE2A79E33C00E58E49 /* SQLiteHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8684ED2A79E33C00E58E49 /* SQLiteHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		2E8684DF2A76493700E58E49 /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		2E8684E12A7660B800E58E49 /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 		2E8684E42A77614B00E58E49 /* NewRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecord.swift; sourceTree = "<group>"; };
+		2E8684ED2A79E33C00E58E49 /* SQLiteHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				2E8684AD2A70D1C700E58E49 /* WeightRecordApp.swift */,
+				2E8684EA2A78E0DE00E58E49 /* SQLiteHandler */,
 				2E8684BE2A70DF1600E58E49 /* Model */,
 				2E8684C12A70E21B00E58E49 /* Views */,
 				2E8684B12A70D1C800E58E49 /* Assets.xcassets */,
@@ -132,6 +135,14 @@
 				2E8684E12A7660B800E58E49 /* ProfileEditor.swift */,
 			);
 			path = Profiles;
+			sourceTree = "<group>";
+		};
+		2E8684EA2A78E0DE00E58E49 /* SQLiteHandler */ = {
+			isa = PBXGroup;
+			children = (
+				2E8684ED2A79E33C00E58E49 /* SQLiteHandler.swift */,
+			);
+			path = SQLiteHandler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +231,7 @@
 				2E8684D32A735F5700E58E49 /* RecordDisplay.swift in Sources */,
 				2E8684C62A7105DB00E58E49 /* TestData.swift in Sources */,
 				2E8684C42A70EACD00E58E49 /* RecordChart.swift in Sources */,
+				2E8684EE2A79E33C00E58E49 /* SQLiteHandler.swift in Sources */,
 				2E8684CB2A72210B00E58E49 /* RecordRow.swift in Sources */,
 				2E8684CF2A72980A00E58E49 /* RecordList.swift in Sources */,
 				2E8684E02A76493700E58E49 /* ProfileSummary.swift in Sources */,
