@@ -24,7 +24,18 @@
 		2E8684E52A77614B00E58E49 /* NewRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8684E42A77614B00E58E49 /* NewRecord.swift */; };
 		2E8684E92A78D46000E58E49 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 2E8684E82A78D46000E58E49 /* SQLite */; };
 		2E8684EE2A79E33C00E58E49 /* SQLiteHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8684ED2A79E33C00E58E49 /* SQLiteHandler.swift */; };
+		2E8684F62A7A0A5000E58E49 /* SQLiteHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8684F52A7A0A5000E58E49 /* SQLiteHandlerTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E8684F72A7A0A5000E58E49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E8684A22A70D1C700E58E49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E8684A92A70D1C700E58E49;
+			remoteInfo = WeightRecord;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2E8684AA2A70D1C700E58E49 /* WeightRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeightRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +55,8 @@
 		2E8684E12A7660B800E58E49 /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 		2E8684E42A77614B00E58E49 /* NewRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecord.swift; sourceTree = "<group>"; };
 		2E8684ED2A79E33C00E58E49 /* SQLiteHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteHandler.swift; sourceTree = "<group>"; };
+		2E8684F32A7A0A5000E58E49 /* WeightRecordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeightRecordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E8684F52A7A0A5000E58E49 /* SQLiteHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteHandlerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +68,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2E8684F02A7A0A5000E58E49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -62,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				2E8684AC2A70D1C700E58E49 /* WeightRecord */,
+				2E8684F42A7A0A5000E58E49 /* WeightRecordTests */,
 				2E8684AB2A70D1C700E58E49 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				2E8684AA2A70D1C700E58E49 /* WeightRecord.app */,
+				2E8684F32A7A0A5000E58E49 /* WeightRecordTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,6 +167,14 @@
 			path = SQLiteHandler;
 			sourceTree = "<group>";
 		};
+		2E8684F42A7A0A5000E58E49 /* WeightRecordTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E8684F52A7A0A5000E58E49 /* SQLiteHandlerTests.swift */,
+			);
+			path = WeightRecordTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -168,6 +198,24 @@
 			productReference = 2E8684AA2A70D1C700E58E49 /* WeightRecord.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2E8684F22A7A0A5000E58E49 /* WeightRecordTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E8684F92A7A0A5000E58E49 /* Build configuration list for PBXNativeTarget "WeightRecordTests" */;
+			buildPhases = (
+				2E8684EF2A7A0A5000E58E49 /* Sources */,
+				2E8684F02A7A0A5000E58E49 /* Frameworks */,
+				2E8684F12A7A0A5000E58E49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E8684F82A7A0A5000E58E49 /* PBXTargetDependency */,
+			);
+			name = WeightRecordTests;
+			productName = WeightRecordTests;
+			productReference = 2E8684F32A7A0A5000E58E49 /* WeightRecordTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -180,6 +228,10 @@
 				TargetAttributes = {
 					2E8684A92A70D1C700E58E49 = {
 						CreatedOnToolsVersion = 14.3;
+					};
+					2E8684F22A7A0A5000E58E49 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 2E8684A92A70D1C700E58E49;
 					};
 				};
 			};
@@ -200,6 +252,7 @@
 			projectRoot = "";
 			targets = (
 				2E8684A92A70D1C700E58E49 /* WeightRecord */,
+				2E8684F22A7A0A5000E58E49 /* WeightRecordTests */,
 			);
 		};
 /* End PBXProject section */
@@ -211,6 +264,13 @@
 			files = (
 				2E8684B52A70D1C800E58E49 /* Preview Assets.xcassets in Resources */,
 				2E8684B22A70D1C800E58E49 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E8684F12A7A0A5000E58E49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +298,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2E8684EF2A7A0A5000E58E49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E8684F62A7A0A5000E58E49 /* SQLiteHandlerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E8684F82A7A0A5000E58E49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E8684A92A70D1C700E58E49 /* WeightRecord */;
+			targetProxy = 2E8684F72A7A0A5000E58E49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2E8684B62A70D1C800E58E49 /* Debug */ = {
@@ -411,6 +487,40 @@
 			};
 			name = Release;
 		};
+		2E8684FA2A7A0A5000E58E49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rejxcy.WeightRecordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeightRecord.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WeightRecord";
+			};
+			name = Debug;
+		};
+		2E8684FB2A7A0A5000E58E49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rejxcy.WeightRecordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeightRecord.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WeightRecord";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -428,6 +538,15 @@
 			buildConfigurations = (
 				2E8684B92A70D1C800E58E49 /* Debug */,
 				2E8684BA2A70D1C800E58E49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E8684F92A7A0A5000E58E49 /* Build configuration list for PBXNativeTarget "WeightRecordTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E8684FA2A7A0A5000E58E49 /* Debug */,
+				2E8684FB2A7A0A5000E58E49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

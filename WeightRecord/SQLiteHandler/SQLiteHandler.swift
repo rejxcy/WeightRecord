@@ -81,9 +81,9 @@ class SQLiteHandler {
         }
     }
 
-    func deleteWeightRecord(record: WeightRecord) {
+    func deleteWeightRecord(recordID: Int64) {
         do {
-            let recordToDelete = RecordTable.tableName.filter(RecordTable.id == record.id)
+            let recordToDelete = RecordTable.tableName.filter(RecordTable.id == recordID)
             try db?.run(recordToDelete.delete())
         } catch {
             print("[Error] Cann't delete record  database: \(error)")
